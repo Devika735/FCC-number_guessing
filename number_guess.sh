@@ -31,9 +31,9 @@ while read NUM; do
     if [[ $NUM -eq $RANDOM_NUM ]]; then
       break
     elif [[ $NUM -gt $RANDOM_NUM ]]; then
-      echo -n "It's lower than that, guess again:"
+      echo -n "It's lower than that, guess again: "
     else
-      echo -n "It's higher than that, guess again:"
+      echo -n "It's higher than that, guess again: "
     fi
     GUESS=$((GUESS + 1))
   fi
